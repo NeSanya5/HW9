@@ -27,5 +27,6 @@ public class Main {
         for (int i = reversFullName.length; i != 0; i--) {
             System.out.print(reversFullName[i - 1]);
         }
+
     }
 }
