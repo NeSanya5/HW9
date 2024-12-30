@@ -24,9 +24,12 @@ public class Main {
         System.out.println(monthAmountExpenses);
         System.out.println("Задача 4");
         char [] reversFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reversFullName.length; i != 0; i--) {
-            System.out.print(reversFullName[i - 1]);
+        char j;
+        for (int i = 0; i < reversFullName.length / 2; i++) {
+            j = reversFullName[i];
+            reversFullName[i] = reversFullName[reversFullName.length - 1 - i];
+            reversFullName[reversFullName.length - 1 - i] = j;
         }
-
+        System.out.println(reversFullName);
     }
 }
